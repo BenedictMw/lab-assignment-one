@@ -4,85 +4,81 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e37435b-307f-4658-94f5-e3643b903a3b" name="Changes" comment="" />
+    <list default="true" id="6f752bed-fa8c-4087-8a07-4208147a3491" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/LabAssignmentOne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact_Us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contact_Us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BenedictMw"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BenedictMw/lab-assignment-one",
-    "accountId": "18bfe7c4-f5b8-480b-b18f-41b96ec7bd34"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2x6ReRmwZKCjmuHu48K9PYcb2KU" />
+  <component name="ProjectId" id="2xOfHKF3CbZeY5tK91oBEIxePmA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Home.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.About_Us.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Contact_Us.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Home.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="Home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/lab1_193561/Home.html" useBuiltInWebServerPort="true">
+    <configuration name="Contact_Us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LabAssignmentOne/Contact_Us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Home.html" />
+        <item itemvalue="JavaScript Debug.Contact_Us.html" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4e37435b-307f-4658-94f5-e3643b903a3b" name="Changes" comment="" />
-      <created>1747256634946</created>
+      <changelist id="6f752bed-fa8c-4087-8a07-4208147a3491" name="Changes" comment="" />
+      <created>1747813953086</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747256634946</updated>
-      <workItem from="1747256635339" duration="7251000" />
-      <workItem from="1747264140799" duration="1880000" />
+      <updated>1747813953086</updated>
+      <workItem from="1747813954122" duration="2512000" />
+      <workItem from="1747824977609" duration="11000" />
+      <workItem from="1747825724978" duration="280000" />
+      <workItem from="1749037862273" duration="764000" />
+      <workItem from="1749628949069" duration="617000" />
+      <workItem from="1749643994673" duration="12000" />
+      <workItem from="1749644182830" duration="60000" />
+      <workItem from="1750706180401" duration="2010000" />
+      <workItem from="1751432901207" duration="324000" />
     </task>
     <servers />
   </component>

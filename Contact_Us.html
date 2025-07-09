@@ -1,60 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>BennyEats</title>
+  <meta charset="UTF-8">
+  <title>BennyEats</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-      <style>
-          ul li
-          {
-            font-size: 15px;
-              list-style-type: none;
-              display: inline;
-              border-right: 1px solid white;
-              text-transform: uppercase;
+    ul li {
+      font-size: 15px;
+      list-style-type: none;
+      display: inline;
+      border-right: 1px solid white;
+      text-transform: uppercase;
+      padding: 5px;
+    }
 
-              padding: 5px;
-          }
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
 
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
 
-          </style>
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
 
+    form button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #e65100;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif">
+<body>
 
   <a href="Home.html">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3fYiK5wjPhs3SU-ITs_2ufgpKORqAwu0Tw&s" style="width:200px; height: 100px; " >
-
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3fYiK5wjPhs3SU-ITs_2ufgpKORqAwu0Tw&s" style="width:200px; height: 100px;">
   </a>
-    <h1 style="float: right; width: 80%;"> BennyEats</h1>
-<hr>
+  <h1 style="float: right; width: 80%;">BennyEats</h1>
+  <hr>
 
+  <div>
+    <ul>
+      <li><a style="text-decoration: none; color: black" href="Home.html">Home</a></li>
+      <li><a style="text-decoration: none; color: black" href="About_Us.html">About Us</a></li>
+      <li>Order</li>
+      <li><a style="text-decoration: none; color: black" href="Reviews.html">Reviews</a></li>
+      <li><a style="text-decoration: none; color: black;" href="Contact_Us.html">Contact Us</a></li>
+    </ul>
+  </div>
 
-   </div>
-   <div>
-     <ul>
-           <li><a style="text-decoration: none; color: black" href="Home.html"> Home</a> </li>
-           <li><a style="text-decoration: none; color: black" href="About_Us.html"> About Us</a> </li>
-           <li>Order</li>
-           <li><a  style="text-decoration: none; color: black" href="Reviews.html"> Reviews</a></li>
-           <li> <a  style="text-decoration: none; color: black;" href="Contact_Us.html"> Contact Us</a> </li>git
+  <hr>
 
+  <div class="container">
+    <h2 style="text-align: center;">Register</h2>
+    <form onsubmit="return validateForm()">
+      <label>Name *</label>
+      <input type="text" id="name" placeholder="Your Name" required>
 
-       </ul>
-   </div>
+      <label>Email *</label>
+      <input type="email" id="email" placeholder="Your Email" required>
 
-<hr>
+      <label>Phone Number *</label>
+      <input type="text" id="phone" placeholder="e.g. +254712345678" required>
 
-<div>
-    <p style=" font-size: 20px">Send us a message</p>
-    <form>
-        <label> Name *</label>
-        <input style="" type="text" name="name" placeholder="Your name">
-        <label> Email * </label>
-        <input style="" type="text" placeholder="Your Email">
+      <label>Date of Birth *</label>
+      <input type="date" id="dob" required>
+
+      <label>Password *</label>
+      <input type="password" id="password" required>
+
+      <label>Confirm Password *</label>
+      <input type="password" id="confirmPassword" required>
+
+      <label>Account Type *</label>
+      <select id="accountType" required>
+        <option value="">--Select Account Type--</option>
+        <option value="student">Student</option>
+        <option value="farmer">Farmer</option>
+        <option value="vendor">Vendor</option>
+      </select>
+
+      <button type="submit">Register</button>
     </form>
+  </div>
 
-</div>
+  <script>
+    function isAlphabetic(value) {
+      return /^[A-Za-z]+$/.test(value);
+    }
 
+    function isValidPhone(phone) {
+      return /^\+?[0-9]{10,13}$/.test(phone);
+    }
+
+    function isStrongPassword(password) {
+      return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/.test(password);
+    }
+
+    function passwordsMatch(p1, p2) {
+      return p1 === p2;
+    }
+
+    function isAtLeast18(dob) {
+      const birth = new Date(dob);
+      const today = new Date();
+      const age = today.getFullYear() - birth.getFullYear();
+      return age >= 18;
+    }
+
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const dob = document.getElementById("dob").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const accountType = document.getElementById("accountType").value;
+
+      if (!isAlphabetic(name)) {
+        alert("Name should contain only letters.");
+        return false;
+      }
+
+      if (!isValidPhone(phone)) {
+        alert("Enter a valid phone number (e.g. +254712345678).");
+        return false;
+      }
+
+      if (!isAtLeast18(dob)) {
+        alert("You must be at least 18 years old.");
+        return false;
+      }
+
+      if (!isStrongPassword(password)) {
+        alert("Password must contain uppercase, lowercase, number, and special character.");
+        return false;
+      }
+
+      if (!passwordsMatch(password, confirmPassword)) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+      if (accountType === "") {
+        alert("Please select an account type.");
+        return false;
+      }
+
+      alert(`You (${name}) have successfully registered as a ${accountType}.`);
+      return true;
+    }
+  </script>
 </body>
 </html>
